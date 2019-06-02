@@ -1,0 +1,22 @@
+package countdigit;
+import java.util.Scanner;
+public class countdigit {
+
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		int count, temp, quo, rem, num;
+		count = 1;
+		System.out.println("Enter Number :- ");
+		num = s.nextInt();
+		temp = num;
+		while(count < num)
+		{
+			quo = num/10;
+			rem = num%10;
+			num = quo;
+			count++;
+		}
+		System.out.println("Number of digits in (" + temp + ") are = " + count);
+	}
+
+}

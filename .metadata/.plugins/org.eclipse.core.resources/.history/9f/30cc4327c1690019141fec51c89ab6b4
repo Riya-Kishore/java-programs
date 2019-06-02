@@ -1,0 +1,114 @@
+package pyramid;
+import java.util.Scanner;
+public class pyramid {
+
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		int i, j, a, b, k;
+		b = 1;
+		System.out.println("Enter the value of a:- ");
+		a = s.nextInt();
+		for(k=1; k<=9; k++)
+		{
+			switch(k)
+			{
+				case 1 :
+						for(i=1; i<=a; i++)
+						{
+							for(j=1; j<=i; j++)
+							{
+								System.out.print("*");
+							}
+							System.out.print("\n");
+						}
+					
+				case 2 :
+						for(i=1; i<=a; i++)
+						{
+							for(j=1; j<=i; j++)
+							{
+								System.out.print("i");
+							}
+							System.out.print("\n");
+						}
+						
+				case 3 :
+						for(i=1; i<=a; i++)
+						{
+							for(j=1; j<=i; j++)
+							{
+								System.out.print("j");
+							}
+							System.out.print("\n");
+						}
+						
+				case 4 :
+						for(i=1; i<=a; i++)
+						{
+							for(j=1; j<=i; j++)
+							{
+								System.out.print("b++");
+							}
+							System.out.print("\n");
+						}
+
+				case 5 :
+						for(i=1; i<=a; i++)
+						{
+							for(j=1; j<=i; j++)
+							{
+								System.out.print("i+j");
+							}
+							System.out.print("\n");
+						}
+						
+				case 6 :
+						for(i=1; i<=a; i++)
+						{
+							for(j=1; j<=i; j++)
+							{
+								if((i+j)%2 == 0)
+								{
+									System.out.print("1");
+								}
+								else
+								{
+									System.out.print("0");
+								}
+							}
+							System.out.print("\n");
+						}
+					
+				case 7 :
+						for(i=1; i<=a; i++)
+						{
+							for(j=1; j<=i; j++)
+							{
+								System.out.print(a+1-j);
+							}
+							System.out.print("\n");
+						}
+					
+				case 8:
+						for(i=1; i<=a; i++)
+						{
+							for(j=1; j<=i; j++)
+							{	
+								System.out.print(a+1-i);
+							}
+							System.out.print("\n");
+						}
+						
+				case 9 :
+						for(i=1; i<=a; i++)
+						{
+							for(j=1; j>=i; j--)
+							{
+								System.out.print("*");
+							}
+							System.out.print("\n");
+						}
+			}			
+	}	
+}
+}

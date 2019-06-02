@@ -1,0 +1,135 @@
+package pyramid;
+import java.util.Scanner;
+public class pyramid {
+
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		int i, j, a, b, k;
+		b = 1;
+		System.out.println("Enter the value of a:- ");
+		a = s.nextInt();
+		for(k=1; k<=9; k++)
+		{
+			switch(k)
+			{
+				case 1 :
+						System.out.println("---------a--------");
+						for(i=1; i<=a; i++)
+						{
+							for(j=1; j<=i; j++)
+							{
+								System.out.print("*");
+							}
+							System.out.print("\n");
+						}
+						break;
+					
+				case 2 :
+						System.out.println("---------b--------");
+						for(i=1; i<=a; i++)
+						{
+							for(j=1; j<=i; j++)
+							{
+								System.out.print(i);
+							}
+							System.out.print("\n");
+						}
+						break;
+						
+				case 3 :
+						System.out.println("---------c--------");
+						for(i=1; i<=a; i++)
+						{
+							for(j=1; j<=i; j++)
+							{
+								System.out.print(j);
+							}
+							System.out.print("\n");
+						}
+						break;
+						
+				case 4 :
+						System.out.println("---------d--------");
+						for(i=1; i<=a; i++)
+						{
+							for(j=1; j<=i; j++)
+							{
+								System.out.print(b++);
+							}
+							System.out.print("\n");
+						}
+						break;
+
+				case 5 :
+						System.out.println("---------e--------");
+						for(i=1; i<=a; i++)
+						{
+							for(j=1; j<=i; j++)
+							{
+								System.out.print(i+j);
+							}
+							System.out.print("\n");
+						}
+						break;
+						
+				case 6 :
+						System.out.println("---------f--------");
+						for(i=1; i<=a; i++)
+						{
+							for(j=1; j<=i; j++)
+							{
+								if((i+j)%2 == 0)
+								{
+									System.out.print("1");
+								}
+								else
+								{
+									System.out.print("0");
+								}
+							}
+							System.out.print("\n");
+						}
+						break;
+						
+				case 7 :
+						System.out.println("---------g--------");
+						for(i=1; i<=a; i++)
+						{
+							for(j=1; j<=i; j++)
+							{
+								System.out.print(a+1-j);
+							}
+							System.out.print("\n");
+						}
+						break;
+					
+				case 8:
+						System.out.println("---------h--------");
+						for(i=1; i<=a; i++)
+						{
+							for(j=1; j<=i; j++)
+							{	
+								System.out.print(a+1-i);
+							}
+							System.out.print("\n");
+						}
+						break;
+						
+				case 9 :
+						System.out.println("---------i--------");
+						for(i=1; i<=a; i++)
+						{
+							for(j=1; j>=i; j--)
+							{
+								System.out.print("*");
+							}
+							System.out.print("\n");
+						}
+						break;
+						
+				default :
+						System.out.println("DONE");
+			}			
+	}	
+}
+}

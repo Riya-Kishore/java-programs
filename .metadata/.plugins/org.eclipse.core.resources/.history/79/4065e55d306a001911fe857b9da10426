@@ -1,0 +1,29 @@
+package fileexcep;
+public class fileexcep 
+{
+	void test()throws ArithmeticException
+	{
+		int a=10,b=0,c;
+		c=a/b;
+		System.out.print("Result="+c);
+		c=a+b;
+		System.out.println("Total="+c);
+	}
+	public static void main(String args[])
+	{
+		fileexcep obj=new fileexcep();
+		try
+		{
+			obj.test();
+		}
+		catch(ArithmeticException e)
+		{
+			System.out.println("Run time error - division by 0");
+		}
+		finally
+		{
+			System.out.println("Closing program");
+		}
+	}
+}
+

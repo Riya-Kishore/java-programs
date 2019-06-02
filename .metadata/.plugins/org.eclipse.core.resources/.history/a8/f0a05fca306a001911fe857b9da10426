@@ -1,0 +1,41 @@
+package fileexcep;
+public class fileexcep 
+{
+	void test()throws ArithmeticException
+	{
+		int a=10,b=0,c;
+		c=a/b;
+		System.out.print("Result="+c);
+		c=a+b;
+		System.out.println("Total="+c);
+	}
+	/*test() and test1() works similarly, the only difference in test1() is that the value of b is different*/
+	void test1()throws ArithmeticException
+	{
+		int a=10,b=5,c;
+		c=a/b;
+		System.out.print("Result=" + c);
+		c=a+b;
+		System.out.println("Total=" + c);
+	}
+	public static void main(String args[])
+	{
+		fileexcep obj=new fileexcep();
+		try
+		{
+			System.out.println("Test1 :- ");
+			obj.test1();
+			System.out.println("Test :- ");
+			obj.test();
+		}
+		catch(ArithmeticException e)
+		{
+			System.out.println("Run time error - division by 0");
+		}
+		finally
+		{
+			System.out.println("Closing program");
+		}
+	}
+}
+
